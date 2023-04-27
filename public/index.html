@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CUC Library</title>
+</head>
+
+<body>
+  <h1>CUC Library</h1>
+  <p>Welcome to the CUC Library page</p>
+
+  <h2>Get your book info!</h2>
+  <form action="/send" method="POST" enctype="application/x-www-form-urlencoded" name="book_info">
+    <div>
+      <label for="solicitor-id">Your ID:</label>
+      <input type="text" id="solicitor-id" name="solicitor_id" placeholder="Book ID">
+    </div>
+    <div>
+      <label for="solicitor-given-name">Your Given name: </label>
+      <input type="text" id="solicitor-given-name" name="solicitor_given_name" placeholder="Your Given name">
+    </div>
+    <div>
+      <label for="solicitor-family-name">Your Family name: </label>
+      <input type="text" id="solicitor-family-name" name="solicitor_family_name" placeholder="Your Family name">
+    </div>
+    <div>
+      <label for="book-name">Book Name:</label>
+      <input type="text" id="book-name" name="book_name" placeholder="Book Name">
+    </div>
+    <div>
+      <label for="book-author">Book Author:</label>
+      <input type="text" id="book-author" name="book_author" placeholder="Book Author">
+    </div>
+    <div>
+      <label for="book-publisher">Book Publisher:</label>
+      <input type="text" id="book-publisher" name="book_publisher" placeholder="Book Publisher">
+    </div>
+    <div>
+      <label for="book-year">Book Year:</label>
+      <input type="text" id="book-year" name="book_year" placeholder="Book Year">
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
+</html>
