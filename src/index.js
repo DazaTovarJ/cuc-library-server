@@ -9,6 +9,19 @@ app.use(express.urlencoded({extended: false}));
 
 app.post("/send", (req, res) => {
   console.log(req.body);
+
+  if (
+    !req.body.solicitor_id ||
+    !req.body.solicitor_given_name ||
+    !req.body.solicitor_family_name ||
+    !req.body.book_name ||
+    !req.body.book_author ||
+    !req.body.book_publisher ||
+    !req.body.book_year
+  ) {
+    return res.redirect("/error.html");
+  }
+
   res.send("Message received");
 });
 
